@@ -111,6 +111,8 @@
 				Base,
 			);
 			mainGroup = ECB3D70F2AB7769500CE64B1;
+			packageReferences = (
+			);
 			productRefGroup = ECB3D7192AB7769500CE64B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
