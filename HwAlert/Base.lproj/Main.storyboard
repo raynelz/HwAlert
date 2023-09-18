@@ -61,6 +61,13 @@
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8P-QF-4jN">
+                                <rect key="frame" x="114" y="473" width="165" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,6 +88,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="guessLabel" destination="h8P-QF-4jN" id="TUf-n1-nO7"/>
                         <outlet property="nameLabel" destination="vO5-im-CfF" id="mJ3-lB-FEF"/>
                         <outlet property="sumLabel" destination="QTa-yW-Pwh" id="1gt-fe-zg6"/>
                     </connections>
