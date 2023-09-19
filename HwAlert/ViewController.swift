@@ -40,10 +40,10 @@ class ViewController: UIViewController {
         let action = UIAlertAction(title: "Продолжить", style: .default) { _ in
             let text = alertController.textFields?.first
             self.nameLabel.text! = (text?.text)!
-        }
+    }
 
-        alertController.addTextField { _ in
-
+        alertController.addTextField { textField in
+            textField.placeholder = "ФИО"
         }
 
         alertController.addAction(action)
@@ -59,9 +59,11 @@ class ViewController: UIViewController {
             self.sumLabel.text! = "Сумма = " + String(Int(num?.text ?? "nil")! + Int(secondNum?.text ?? "nil")!)
         }
 
-        alertController.addTextField { _ in
+        alertController.addTextField { textField in
+            textField.placeholder = "Число 1"
         }
-        alertController.addTextField { _ in
+        alertController.addTextField { textField in
+            textField.placeholder = "Число 2"
         }
 
         alertController.addAction(action)
@@ -90,8 +92,8 @@ class ViewController: UIViewController {
             self.guessLabel.text! = "Ответ: " + String(correctAnswer)
         }
         
-        alertController.addTextField { _ in
-            
+        alertController.addTextField { textField in
+            textField.placeholder = "Число"
         }
         
         // Add actions
